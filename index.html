@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times API</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/bg.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container" style="direction: rtl;">
+        <!-- Row 02 for title -->
+    <div class="row py-5 text-center">
+        <h1>مواقيت الصلاة</h1>
+    </div>
+        <!-- Row 02 for title -->
+    <div class="first-row">
+        <div class="row py-3">
+            <div class="town col-lg-8">
+                <h1 id="cityName">القاهرة</h1>
+            </div>
+            <div class="choose col-lg-4">
+                <label for="inputcities" class="form-label"><h5> اختر محافظتك 🧡 </h5></label>
+                <select id="inputcities" class="form-select custom-select">
+                    <!-- <option value="">القاهرة </option>
+                    <option value="">الجيزة </option>
+                    <option value="">سوهاج </option> -->
+                </select>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="date col-lg-6">
+                <h3 id="dayName" class="droid-arabic-naskh">اليوم</h3>
+                <h5 id="dayDate">3-3-2023</h5>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- Row 03 for Times -->
+    <div class="first-row py-3">
+        <div class="row d-flex justify-content-around">
+            <div class="mb-3 alert text-bg-secondary col-lg-1">
+                <h5 class="text-center">الفجر</h5>
+                <hr>
+                <h6 id="fagr-time">10:4</h6>
+            </div>
+            <div class="mb-3 alert text-bg-light col-lg-1">
+                <h5 class="text-center">الشروق</h5>
+                <hr>
+                <h6 id="sun-time">10:4</h6>
+            </div>
+            <div class="mb-3 alert text-bg-secondary col-lg-1">
+                <h5 class="text-center">الظهر</h5>
+                <hr>
+                <h6 id="zohr-time">10:4</h6>
+            </div>
+            <div class="mb-3 alert text-bg-light col-lg-1">
+                <h5 class="text-center">العصر</h5>
+                <hr>
+                <h6 id="azr-time">10:4</h6>
+            </div>
+            <div class="mb-3 alert text-bg-secondary col-lg-1">
+                <h5 class="text-center">المغرب</h5>
+                <hr>
+                <h6 id="maghrb-time">10:4</h6>
+            </div>
+            <div class="mb-3 alert text-bg-light col-lg-1">
+                <h5 class="text-center">العشاء</h5>
+                <hr>
+                <h6 id="asha-time">10:4</h6>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/all.min.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="scripts/file.js"></script>
+    <!-- <script src="scripts/numberAr.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+@font-face {
+    font-family:"GE SS Two Bold";src:url("GE_SS_Two_Bold.eot?") format("eot"),
+    url("GE_SS_Two_Bold.woff") format("woff"),url("GE_SS_Two_Bold.ttf") format("truetype"),
+    url("GE_SS_Two_Bold.svg#GESSTwoBold-Bold") format("svg");font-weight:normal;font-style:normal;
+}
+
+::selection{
+    background-color: #a1866e;
+    color: aliceblue;
+}
+
+  /* // select */
+.custom-select {
+    cursor: pointer;
+    font-weight: 400;
+    color: black;
+    background-color: rgb(187, 170, 152);
+    border: 1px solid #a1866e;
+}
+
+.custom-select:focus,
+.custom-select:focus {
+    box-shadow: none;
+}
+
+.custom-select:focus {
+    border: 1px solid #28576f;
+    box-shadow: none;
+    border-color: #28576f;
+    box-shadow: -1px 1px 20px -11px #28576f;
+}
